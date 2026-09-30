@@ -5,7 +5,6 @@ public class ActiveWeapon : MonoBehaviour
 {
     [SerializeField] WeaponSO weaponSO;
     Animator animator;
-
     StarterAssetsInputs starterAssetsInputs;
     Weapon currentWeapon;
     float timeSinceLastShot = 0f;
@@ -24,7 +23,7 @@ public class ActiveWeapon : MonoBehaviour
     void Update()
     {
         HandleShoot();
-        timeSinceLastShot =+ Time.deltaTime;
+        timeSinceLastShot += Time.deltaTime;
     }
 
     void HandleShoot()
@@ -34,11 +33,15 @@ public class ActiveWeapon : MonoBehaviour
         if(timeSinceLastShot >= weaponSO.FireRate)
         {
             currentWeapon.Shoot(weaponSO);
-            animator.Play(SHOOT_STRING, 0, 0f);
+            animator.Play(SHOOT_STRING,0,0f);
             timeSinceLastShot = 0f;
         }
 
-        starterAssetsInputs.ShootInput(false);
+        if (!weaponSO.IsAutomatic)
+        {
+            starterAssetsInputs.ShootInput(false);
+        }
+
         
     }
 }
