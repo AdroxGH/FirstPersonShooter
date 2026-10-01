@@ -26,6 +26,11 @@ public class ActiveWeapon : MonoBehaviour
         timeSinceLastShot += Time.deltaTime;
     }
 
+    public void SwitchWeapon(WeaponSO weaponSO)
+    {
+        Debug.Log("Player picked up " + weaponSO.name);
+    }
+
     void HandleShoot()
     {
         if (!starterAssetsInputs.shoot) return;
