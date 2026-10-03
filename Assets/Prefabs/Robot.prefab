@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 8944586001416894392}
   - component: {fileID: 523148225106570400}
   - component: {fileID: 2668563775101058804}
-  - component: {fileID: 1396936231480541370}
+  - component: {fileID: 2484599900028501474}
   m_Layer: 6
   m_Name: Robot
   m_TagString: Untagged
@@ -138,7 +138,7 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1396936231480541370
+--- !u!136 &2484599900028501474
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
