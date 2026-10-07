@@ -18,4 +18,3 @@ public class Weapon : MonoBehaviour
         }
     }
 }
-//this is definitely not here because Im trying to keep my contributions up
