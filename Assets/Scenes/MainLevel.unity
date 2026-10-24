@@ -267619,14 +267619,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2724622370846799884, guid: 5dd4055e7e7492c48aa3edbe0b5fa2bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 990418741}
   m_SourcePrefab: {fileID: 100100000, guid: 5dd4055e7e7492c48aa3edbe0b5fa2bf, type: 3}
 --- !u!114 &990418738 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6409615660086371313, guid: 5dd4055e7e7492c48aa3edbe0b5fa2bf, type: 3}
   m_PrefabInstance: {fileID: 990418737}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 990418740}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
@@ -267637,6 +267640,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1091641652160436651, guid: 5dd4055e7e7492c48aa3edbe0b5fa2bf, type: 3}
   m_PrefabInstance: {fileID: 990418737}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &990418740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2724622370846799884, guid: 5dd4055e7e7492c48aa3edbe0b5fa2bf, type: 3}
+  m_PrefabInstance: {fileID: 990418737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &990418741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990418740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ApplyAfter: 2
+  ChannelMask: 1
+  Gain: 1
+  Use2DDistance: 0
+  UseCameraSpace: 1
+  ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    Duration: 1
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &993775798
 GameObject:
   m_ObjectHideFlags: 0
@@ -574840,6 +574871,10 @@ PrefabInstance:
       propertyPath: weaponSO
       value: 
       objectReference: {fileID: 11400000, guid: 14109e54ea934ca44bf387abe393e6e4, type: 2}
+    - target: {fileID: 5741199426683192271, guid: 9fdf1a07f6f42204998614d80a3231c0, type: 3}
+      propertyPath: weaponCamera
+      value: 
+      objectReference: {fileID: 1444183701}
     - target: {fileID: 5741199426683192271, guid: 9fdf1a07f6f42204998614d80a3231c0, type: 3}
       propertyPath: zoomVignette
       value: 
